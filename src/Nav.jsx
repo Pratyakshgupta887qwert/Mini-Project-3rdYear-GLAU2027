@@ -9,7 +9,7 @@ const Nav = () => {
         <h1 className="ml-2 self-center text-2xl font-bold bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400 bg-clip-text text-transparent">EventCheck</h1>
       </div>
       <Link to="/signin" className='cursor-pointer px-2 py-1 rounded-md bg-purple-600 text-white font-medium'>
-        Sign in
+        Sign in.
       </Link>
     </nav>
   )
