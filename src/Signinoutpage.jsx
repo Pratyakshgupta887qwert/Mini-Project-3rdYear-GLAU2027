@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Signinoutpage() {
-  const [mode, setMode] = useState("signIn");
+  const [mode, setMode] = useState("signIn"); 
 
   return (
     <div className="min-h-screen bg-white">
@@ -56,7 +56,7 @@ export default function Signinoutpage() {
             </button>
           </div>
 
-          {/* Form (UI only) */}
+          
           <form
             className="mt-6 space-y-4"
             onSubmit={(e) => {
@@ -94,7 +94,7 @@ export default function Signinoutpage() {
 
             <button
               type="submit"
-              className="mt-2 w-full rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow hover:from-purple-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="mt-2 w-full rounded-lg bg-gradient-to-r from-purple-400 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow hover:from-indigo-600 hover:to-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-300"
             >
               {mode === "signUp" ? "Create Account" : "Sign In"}
             </button>
