@@ -1,5 +1,6 @@
 import React from 'react'
 import FrontPage from './FrontPage'
+import Signinoutpage from './Signinoutpage.jsx';
 
 function App() {
   
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
     <FrontPage></FrontPage>
+      <Signinoutpage />
     </>
   )
 }
