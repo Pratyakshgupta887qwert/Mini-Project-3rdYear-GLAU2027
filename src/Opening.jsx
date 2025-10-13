@@ -33,7 +33,7 @@ const Opening = () => {
           Get Started →
         </motion.button>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator
         <div className="absolute bottom-10 flex justify-center items-center mt-12">
           <div className="animate-bounce flex flex-col items-center">
             <div className="w-6 h-10 rounded-full border-2 border-gray-400 flex justify-center items-start p-1">
@@ -41,7 +41,7 @@ const Opening = () => {
             </div>
             <span className="text-sm text-gray-500 mt-2">Scroll down</span>
           </div>
-        </div>
+        </div> */}
       </motion.section>
 
       {/* How It Works Section */}
