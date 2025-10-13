@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './nav'
+import Nav from './Nav'
 import Opening from './Opening'
 import UpcomingList from './UpcomingList'
 import Footer from './Footer'
