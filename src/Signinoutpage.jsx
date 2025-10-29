@@ -7,19 +7,10 @@ export default function Signinoutpage() {
     <div className="min-h-screen bg-white">
       {/* Top bar */}
       <header className="h-16 flex items-center">
-        <div className="mx-auto w-full max-w-6xl px-4 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2 font-semibold text-gray-800">
-            <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-tr from-purple-600 to-sky-400 text-white text-xs">
-              📅
-            </span>
-            <span>
-              Event
-              <span className="bg-gradient-to-r from-sky-500 to-purple-600 bg-clip-text text-transparent">
-                Check
-              </span>
-            </span>
-          </a>
-        </div>
+        <div className='flex items-center '>
+        <img width="44" height="14" src="https://img.icons8.com/nolan/64/calendar.png" alt="calendar"/>
+        <h1 className="ml-2 self-center text-2xl font-bold bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400 bg-clip-text text-transparent">EventCheck</h1>
+      </div>
       </header>
 
       {/* Centered Card */}

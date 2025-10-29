@@ -4,6 +4,7 @@ import ticket from "./assets/icons8-ticket-80 (1).png";
 import Contact from "./assets/Contact.png";
 import QR from "./assets/QR.png";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom'
 
 const Opening = () => {
   return (
@@ -25,6 +26,7 @@ const Opening = () => {
           Perfect for college events, conferences, and meetups.
         </p>
 
+    <Link to="/signin" aria-label="Sign in">
         <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
@@ -32,6 +34,7 @@ const Opening = () => {
         >
           Get Started →
         </motion.button>
+        </Link>
 
         {/* Scroll Indicator
         <div className="absolute bottom-10 flex justify-center items-center mt-12">
