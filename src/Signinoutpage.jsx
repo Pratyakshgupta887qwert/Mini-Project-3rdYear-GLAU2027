@@ -83,6 +83,18 @@ export default function Signinoutpage() {
               />
             </div>
 
+            {mode === "signUp" && (
+              <div className="space-y-1.5">
+                  <label className="text-sm font-medium text-gray-700">Role</label>
+    <select
+      className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200">
+        <option value="" disabled selected>Select a role</option>
+        <option value="admin">Admin</option>
+        <option value="student">Normal Student</option>
+      </select>
+    </div>
+)}
+
             <button
               type="submit"
               className="mt-2 w-full rounded-lg bg-gradient-to-r from-purple-400 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow hover:from-indigo-600 hover:to-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-300"
