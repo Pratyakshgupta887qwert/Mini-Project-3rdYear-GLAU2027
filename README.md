@@ -1,95 +1,73 @@
-# Event RSVP & Check-in Platform
+# Welcome to your Lovable project
 
-A **full-stack web application** to manage event registrations and attendance for college events.
+## Project info
 
----
+**URL**: https://lovable.dev/projects/1180082a-341e-446d-a6e6-63254bb26e32
 
-## 💡 **Concept**
+## How can I edit this code?
 
-- Participants register online for college events and receive a unique QR code pass.
-- At the event gate, organizers scan the QR code to verify and mark attendance.
+There are several ways of editing your application.
 
----
+**Use Lovable**
 
-##  **Core Features**
+Simply visit the [Lovable Project](https://lovable.dev/projects/1180082a-341e-446d-a6e6-63254bb26e32) and start prompting.
 
-### 👤 For Users (Participants)
-- **Register for an event:** Fill name, email, ID, etc.
-- **Receive confirmation mail:** Get a unique QR code.
-- **View event details:** Access event information on the portal.
+Changes made via Lovable will be committed automatically to this repo.
 
-### 🧑‍💼 For Organizers (Admins)
-- **Login panel:** Manage events securely.
-- **Dashboard:**
-  - Total registrations
-  - Number of check-ins
-  - List of attendees
-- **QR Code scanning:** Page to scan QR codes and mark attendance in DB.
-- **Export attendance list:** Download data as CSV/Excel.
+**Use your preferred IDE**
 
----
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## 🛠 **Tech Stack**
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-| Layer          | Technology                                      |
-|----------------|-------------------------------------------------|
-| **Frontend**   | React.js, HTML, CSS, JS, Bootstrap/Tailwind     |
-| **Backend**    | Node.js, Express.js                             |
-| **Database**   | MongoDB                                         |
-| **QR Code**    | [qrcode](https://www.npmjs.com/package/qrcode)  |
-| **QR Scanner** | react-qr-reader / html5-qrcode                  |
-| **Auth**       | JWT (admin login)                               |
-| **Deployment** | Frontend: Vercel/Netlify<br>Backend: Render/Railway |
-| **Optional**   | Nodemailer (send QR codes via email)            |
+Follow these steps:
 
----
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-## 🔄 **System Flow**
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-1. **User Registration:** Participant fills form, data saved in DB.
-2. **QR Code Generation:** Backend generates unique QR code, stores it, emails/displays to user.
-3. **Organizer Dashboard:** QR scanner opens, scans code, verifies from DB, marks `checkedIn: true`.
-4. **Real-Time Updates:** Dashboard displays up-to-date stats.
+# Step 3: Install the necessary dependencies.
+npm i
 
----
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-## 📊 **Dashboard Example**
+**Edit a file directly in GitHub**
 
-- **Total Registrations:** 120
-- **Checked-in:** 85
-- **Pending:** 35
-- **Export:** [Download CSV/Excel]
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
----
+**Use GitHub Codespaces**
 
-## 📫 **Contact & Contributions**
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-This project was developed with great collaboration and teamwork as part of our Full Stack Web Development Mini Project.
-It represents our combined effort in frontend, backend, and database integration to build a complete event management solution.
+## What technologies are used for this project?
 
-## 🤝 **Team Collaboration**
+This project is built with:
 
-This project is a result of continuous brainstorming, coding, and coordination among our team members — reflecting our shared learning and passion for technology.
-We worked together to design, develop, and deploy the Event RSVP & Check-in Platform, ensuring every component was built collaboratively.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
+## How can I deploy this project?
 
----
+Simply open [Lovable](https://lovable.dev/projects/1180082a-341e-446d-a6e6-63254bb26e32) and click on Share -> Publish.
 
-# SETUP
+## Can I connect a custom domain to my Lovable project?
 
-# React + Vite
+Yes, you can!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
